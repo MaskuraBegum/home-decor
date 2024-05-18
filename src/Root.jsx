@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const Root = () => {
     const link = <>
@@ -30,7 +30,7 @@ const Root = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <Link to='/login' className="btn">Login</Link>
                 </div>
             </div>
             <Outlet></Outlet>

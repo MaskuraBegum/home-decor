@@ -11,6 +11,9 @@ import Home from './Home/Home.jsx';
 import Pbanner from './Product/Pbanner.jsx';
 import Error from './Error.jsx';
 import Product from './Product/Product.jsx';
+import Hdetails from './Home/Hdetails.jsx';
+import Rlayout from './Register/Rlayout.jsx';
+import Llayout from './Login.jsx/Llayout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,20 @@ const router = createBrowserRouter([
         path:"/product",
         element:<Product></Product>,
       },
+      {
+        path:"/home/:id",
+        element:<Hdetails></Hdetails>,
+        // loader:()=> fetch('alldata.json')
+      },
+      {
+        path:"/register",
+        element:<Rlayout></Rlayout>
+      },
+      {
+        path:'/login',
+        element:<Llayout></Llayout>
+
+      }
       
     ]
   },
