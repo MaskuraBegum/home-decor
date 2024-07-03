@@ -26,13 +26,13 @@ const router = createBrowserRouter([
         element:<Home></Home>,
       },
       {
-        path:"/product",
+        path:"/cart",
         element:<Product></Product>,
       },
       {
         path:"/home/:id",
         element:<Hdetails></Hdetails>,
-        // loader:()=> fetch('alldata.json')
+        loader:()=> fetch('alldata.json')
       },
       {
         path:"/register",

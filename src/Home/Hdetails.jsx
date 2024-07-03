@@ -1,6 +1,9 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const Hdetails = () => {
+    const details = useLoaderData();
+    console.log(details);
     return (
         <div>
             <div className="card lg:card-side bg-base-100 shadow-xl">

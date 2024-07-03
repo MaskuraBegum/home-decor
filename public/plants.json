@@ -1,0 +1,82 @@
+[
+    {
+        "category": "Indoor Plants",
+        "variation": "Snake Plant",
+        "description": "The snake plant is a popular indoor plant known for its striking upright leaves that resemble snakes. It is easy to care for and can thrive in low light conditions.",
+        "price": 15.99,
+        "stock": 25,
+        "image": "https://i.ibb.co/0YsYt3s/Sansevieria-hahnii-birdsnest.webp"
+    },
+    {
+        "category": "Outdoor Plants",
+        "variation": "Rose Bush",
+        "description": "The rose bush is a classic outdoor plant loved for its beautiful and fragrant flowers. It requires ample sunlight and regular pruning for optimal growth.",
+        "price": 24.99,
+        "stock": 20,
+        "image": "https://i.ibb.co/yBnQYwC/372236.jpg"
+    },
+    {
+        "category": "Succulents",
+        "variation": "Echeveria",
+        "description": "Echeverias are small, rosette-forming succulents that come in a variety of colors and shapes. They are drought-tolerant and perfect for sunny windowsills.",
+        "price": 8.99,
+        "stock": 30,
+        "image": "https://i.ibb.co/K5gm94p/e-apus-always-looks-so-good-right-after-a-drink-v0-rxva06rhgexc1.webp"
+    },
+    {
+        "category": "Herbs",
+        "variation": "Basil",
+        "description": "Basil is a popular herb used in various cuisines around the world. It has a sweet, aromatic flavor and is easy to grow indoors or outdoors.",
+        "price": 5.99,
+        "stock": 40,
+        "image": "https://i.ibb.co/PYcnNq7/nuDzQj.webp"
+    },
+    {
+        "category": "Fruit Trees",
+        "variation": "Lemon Tree",
+        "description": "Lemon trees produce tart and juicy fruits that are rich in vitamin C. They require full sun and well-drained soil to thrive.",
+        "price": 39.99,
+        "stock": 15,
+        "image": "https://i.ibb.co/BLnBHQ8/photo-1605185189315-fc269c231e41.jpg"
+    },
+    {
+        "category": "Cacti",
+        "variation": "Golden Barrel Cactus",
+        "description": "The golden barrel cactus is a striking succulent with round, spiny stems that resemble barrels. It is native to Mexico and requires minimal water.",
+        "price": 12.99,
+        "stock": 20,
+        "image": "https://i.ibb.co/17tmbDY/goldenbarrelwhydocactushavespines-1-1024x678.webp" 
+    },
+    {
+        "category": "Ornamental Plants",
+        "variation": "Fiddle Leaf Fig",
+        "description": "The fiddle leaf fig is a trendy indoor plant with large, glossy leaves that resemble a fiddle. It adds a touch of elegance to any room.",
+        "price": 29.99,
+        "stock": 10,
+        "image": "https://i.ibb.co/5xtLDRB/BD-H-M-Lyrata-1400x.webp"
+    },
+    {
+        "category": "Perennials",
+        "variation": "Lavender",
+        "description": "Lavender is a fragrant perennial herb known for its calming aroma and beautiful purple flowers. It thrives in sunny locations with well-drained soil.",
+        "price": 7.99,
+        "stock": 35,
+        "image": "https://i.ibb.co/Bzy6tCJ/wp3285579.webp"
+    },
+    {
+        "category": "Tropical Plants",
+        "variation": "Monstera Deliciosa",
+        "description": "The monstera deliciosa, also known as the Swiss cheese plant, is a popular tropical plant with large, fenestrated leaves. It thrives in bright, indirect light.",
+        "price": 34.99,
+        "stock": 18,
+        "image": "https://i.ibb.co/MC2ZcJq/wp6539173.webp"
+    },
+    {
+        "category": "Bamboo Plants",
+        "variation": "Lucky Bamboo",
+        "description": "Lucky bamboo is a low-maintenance indoor plant often associated with good fortune and luck. It grows well in water or soil and requires minimal care.",
+        "price": 9.99,
+        "stock": 25,
+        "image": "https://i.ibb.co/bLDLrSq/412-4122794-lucky-bamboo-hd-png-download.webp"
+    }
+]

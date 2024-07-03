@@ -1,0 +1,122 @@
+[
+    {
+      "id": "1",
+      "category": "Sofa",
+      "color": "Grey",
+      "variation": "3-seater",
+      "dimension": "84\"W x 36\"D x 33\"H",
+      "description": "Contemporary grey fabric sofa with tufted backrest.",
+      "price": 899.99,
+      "material": "Fabric",
+      "stock": "yes",
+      "image": "https://i.ibb.co/XyMMyLL/sofaGray.jpg"
+    },
+    {
+      "id": "2",
+      "category": "Bed",
+      "color": "Brown",
+      "variation": "Queen",
+      "dimension": "64\"W x 86\"D x 48\"H",
+      "description": "Classic wooden queen bed frame with headboard.",
+      "price": 699.99,
+      "material": "Wood",
+      "stock": "yes",
+      "image": "https://i.ibb.co/3F8s6X7/bed-frames.webp"
+    },
+    {
+      "id": "3",
+      "category": "Dining Table",
+      "color": "Black",
+      "variation": "Rectangular",
+      "dimension": "72\"L x 36\"W x 30\"H",
+      "description": "Modern black dining table with sleek design.",
+      "price": 499.99,
+      "material": "Metal & Glass",
+      "stock": "yes",
+      "image": "https://i.ibb.co/VpSp0NB/table-Black.jpg"
+    },
+    {
+      "id": "4",
+      "category": "Bookshelf",
+      "color": "White",
+      "variation": "3-tier",
+      "dimension": "32\"W x 12\"D x 72\"H",
+      "description": "White wooden bookshelf with adjustable shelves.",
+      "price": 249.99,
+      "material": "Wood",
+      "stock": "yes",
+      "image": "https://i.ibb.co/HzzRkZV/bookshelf.jpg"
+    },
+    {
+      "id": "5",
+      "category": "Coffee Table",
+      "color": "Espresso",
+      "variation": "Round",
+      "dimension": "36\"D x 18\"H",
+      "description": "Espresso-finished round coffee table with storage.",
+      "price": 199.99,
+      "material": "Wood",
+      "stock": "yes",
+      "image": "https://i.ibb.co/9ptzMDT/roundtable.jpg"
+    },
+    {
+      "id": "6",
+      "category": "Desk",
+      "color": "Walnut",
+      "variation": "L-shaped",
+      "dimension": "60\"W x 55\"D x 30\"H",
+      "description": "Walnut-finished L-shaped desk with keyboard tray.",
+      "price": 399.99,
+      "material": "Wood",
+      "stock": "yes",
+      "image": "https://i.ibb.co/NTvkYpD/s-l1600.jpg"
+    },
+    {
+      "id": "7",
+      "category": "Armchair",
+      "color": "Beige",
+      "variation": "Recliner",
+      "dimension": "36\"W x 36\"D x 40\"H",
+      "description": "Beige fabric recliner armchair with footrest.",
+      "price": 299.99,
+      "material": "Fabric",
+      "stock": "yes",
+      "image": "https://i.ibb.co/Yc0Qb35/chair.webp"
+    },
+    {
+      "id": "8",
+      "category": "Wardrobe",
+      "color": "Cherry",
+      "variation": "3-door",
+      "dimension": "48\"W x 24\"D x 72\"H",
+      "description": "Cherry wood 3-door wardrobe with hanging space.",
+      "price": 799.99,
+      "material": "Wood",
+      "stock": "yes",
+      "image": "https://i.ibb.co/ftP4Y0B/e522bbeabc98cef28b001b616ccb9cd5.jpg"
+    },
+    {
+      "id": "9",
+      "category": "Side Table",
+      "color": "Oak",
+      "variation": "Square",
+      "dimension": "24\"W x 24\"D x 24\"H",
+      "description": "Oak-finished square side table with drawer.",
+      "price": 129.99,
+      "material": "Wood",
+      "stock": "yes",
+      "image": "https://i.ibb.co/yWKPSYk/square-side-table-medium-oak-1.jpg"
+    },
+    {
+      "id": "10",
+      "category": "TV Stand",
+      "color": "Dark Grey",
+      "variation": "Floating",
+      "dimension": "60\"W x 16\"D x 20\"H",
+      "description": "Dark grey floating TV stand with storage compartments.",
+      "price": 349.99,
+      "material": "Wood",
+      "stock": "yes",
+      "image": "https://i.ibb.co/yPG0w4Q/65f3c32fd6a09e143f20ba01-pmnianhua-floating-tv.jpg"
+    }
+  ] 

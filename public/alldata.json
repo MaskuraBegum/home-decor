@@ -16,17 +16,26 @@
     "image": "https://i.ibb.co/XyMMyLL/sofaGray.jpg"
   },
   {
-    "id": "2",
-    "category": "Bed",
-    "color": "Brown",
-    "variation": "Queen",
-    "dimension": "64\"W x 86\"D x 48\"H",
-    "description": "Classic wooden queen bed frame with headboard.",
-    "price": 699.99,
-    "material": "Wood",
-    "stock": "yes",
-    "image": "https://i.ibb.co/3F8s6X7/bed-frames.webp"
-  },
+    "id":"1",
+    "category": "Indoor Plants",
+    "variation": "Snake Plant",
+    "description": "The snake plant is a popular indoor plant known for its striking upright leaves that resemble snakes. It is easy to care for and can thrive in low light conditions.",
+    "price": 15.99,
+    "stock": 25,
+    "image": "https://i.ibb.co/0YsYt3s/Sansevieria-hahnii-birdsnest.webp"
+},
+{
+  "id": "2",
+  "category": "Bed",
+  "color": "Brown",
+  "variation": "Queen",
+  "dimension": "64\"W x 86\"D x 48\"H",
+  "description": "Classic wooden queen bed frame with headboard.",
+  "price": 699.99,
+  "material": "Wood",
+  "stock": "yes",
+  "image": "https://i.ibb.co/3F8s6X7/bed-frames.webp"
+},
   {
     "id": "3",
     "category": "Dining Table",
@@ -51,18 +60,26 @@
     "stock": "yes",
     "image": "https://i.ibb.co/HzzRkZV/bookshelf.jpg"
   },
-  {
-    "id": "5",
-    "category": "Coffee Table",
-    "color": "Espresso",
-    "variation": "Round",
-    "dimension": "36\"D x 18\"H",
-    "description": "Espresso-finished round coffee table with storage.",
-    "price": 199.99,
-    "material": "Wood",
-    "stock": "yes",
-    "image": "https://i.ibb.co/9ptzMDT/roundtable.jpg"
-  },
+  { 
+    "id":"4",
+    "category": "Herbs",
+    "variation": "Basil",
+    "description": "Basil is a popular herb used in various cuisines around the world. It has a sweet, aromatic flavor and is easy to grow indoors or outdoors.",
+    "price": 5.99,
+    "stock": 40,
+    "image": "https://i.ibb.co/PYcnNq7/nuDzQj.webp"
+},{
+  "id": "5",
+  "category": "Coffee Table",
+  "color": "Espresso",
+  "variation": "Round",
+  "dimension": "36\"D x 18\"H",
+  "description": "Espresso-finished round coffee table with storage.",
+  "price": 199.99,
+  "material": "Wood",
+  "stock": "yes",
+  "image": "https://i.ibb.co/9ptzMDT/roundtable.jpg"
+},
   {
     "id": "6",
     "category": "Desk",
@@ -99,6 +116,24 @@
     "stock": "yes",
     "image": "https://i.ibb.co/ftP4Y0B/e522bbeabc98cef28b001b616ccb9cd5.jpg"
   },
+  {
+    "id":"3",
+    "category": "Cacti",
+    "variation": "Golden Barrel Cactus",
+    "description": "The golden barrel cactus is a striking succulent with round, spiny stems that resemble barrels. It is native to Mexico and requires minimal water.",
+    "price": 12.99,
+    "stock": 20,
+    "image": "https://i.ibb.co/17tmbDY/goldenbarrelwhydocactushavespines-1-1024x678.webp" 
+},
+{
+  "id":"2",
+  "category": "Ornamental Plants",
+  "variation": "Fiddle Leaf Fig",
+  "description": "The fiddle leaf fig is a trendy indoor plant with large, glossy leaves that resemble a fiddle. It adds a touch of elegance to any room.",
+  "price": 29.99,
+  "stock": 10,
+  "image": "https://i.ibb.co/5xtLDRB/BD-H-M-Lyrata-1400x.webp"
+},
   {
     "id": "9",
     "category": "Side Table",

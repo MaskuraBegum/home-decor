@@ -4,7 +4,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 const Root = () => {
     const link = <>
         <li><NavLink to="/" className={location.pathname === '/home' ? 'active' : ''}><a>Home</a></NavLink></li>
-        <li><NavLink to="/product" className={location.pathname === '/product' ? 'active' : ''}><a>Our product</a></NavLink></li>
+        <li><NavLink to="/cart" className={location.pathname === '/cart' ? 'active' : ''}><a>Your Cart</a></NavLink></li>
         <li><NavLink to="/about" className={location.pathname === '/about' ? 'active' : ''}><a>About Us</a></NavLink></li>
         <li><NavLink to="/register" className={location.pathname === '/register' ? 'active' : ''}><a>Register</a></NavLink></li>
         
