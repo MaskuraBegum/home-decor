@@ -1,7 +1,54 @@
-import React from 'react';
+import React, { useContext, useRef } from 'react';
+import { AuthContext } from '../provider/Auth_provider.jsx';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Llayout = () => {
+    const {signIn, googleLog} = useContext(AuthContext);
+    const formRef = useRef(null);
+    const nevigate = useNavigate();
+    const location = useLocation();
+
+    const googleClick = () => {
+            googleLog()
+            .then((result) => {
+                if(result.user){
+                    nevigate(location?.state || '/');
+                    alert('Successfully logged in');
+                }
+                
+            })
+            .catch((error) => {
+                alert(error)
+            })
+    }
     
+    const handlelogin = e =>{
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        const user = {email,password}
+        console.log(user);
+        signIn(email,password)
+        .then(result =>{
+            if(result.user){
+                nevigate(location?.state || '/');
+                console.log(result.user)
+                alert('User is successfully loged in')
+                formRef.current.reset();
+            }
+            
+        })
+        .catch(error=>{
+            console.log(error.message)
+            alert(error.message)
+        })
+
+    }
+
+    
+        
+        
+        
     return (
         <div>
         <div className="hero min-h-screen bg-base-200 flex justify-center items-center" >
@@ -16,18 +63,18 @@ const Llayout = () => {
                         </div>
                     </div>
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form className="card-body">
+                        <form ref={formRef} onSubmit={handlelogin} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" placeholder="email" className="input input-bordered" required />
+                                <input type="email" name='email' placeholder="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="password" className="input input-bordered" required />
+                                <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
@@ -35,7 +82,17 @@ const Llayout = () => {
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">login</button>
                             </div>
+                            <h1 className='text-center text-green-800'>If you don't have an account then please</h1>
+                            <div className="form-control mt-2">
+                                <Link to='/register'><button className="btn w-full btn-primary">Register</button></Link>
+                            </div>
                         </form>
+                        <h1 className='text-center -mt-6'>or</h1>
+                        <div className='flex justify-center items-center'>
+                        <div className="form-control w-80 ">
+                                <button onClick={googleClick} className="btn btn-primary">Log in with google</button>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>

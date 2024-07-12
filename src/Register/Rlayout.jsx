@@ -1,6 +1,6 @@
-import React from 'react';
-import auth from '../firebase/firebase.config.js';
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import React, { useContext, useRef } from 'react';
+import { AuthContext } from '../provider/Auth_provider.jsx';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 
 
@@ -18,22 +18,38 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 //   });
 
 const Rlayout = () => {
+
+    const {CreateUser} = useContext(AuthContext);
+    const formRef = useRef(null);
+    const nevigate = useNavigate();
+    const location = useLocation();
     
     const handleRegister = e =>{
         e.preventDefault();
         const name = e.target.name.value
         const email = e.target.email.value;
         const password = e.target.password.value;
-        const user = {name,email}
-        console.log(user);
+        const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (pattern.test(email)) {
+            const user = {name,email,password}
+            console.log(user);
+            CreateUser(email,password)
+                .then (result =>{
+                    if(result.user){
+                        nevigate(location?.state || '/');
+                        console.log(result)
+                        alert('Registerd susscesfull')
+                        formRef.current.reset();    
+                    }
+                    
+        })
+        } else {
+            alert('Invalid email');
+    }   
+  
         
-        createUserWithEmailAndPassword(auth, email, password)
-        .then (result =>{
-            console.log(result.user)
-        })
-        .catch(error=>{
-            console.log(error)
-        })
+        
+       
 
         // fetch('http://localhost:5000/users',{
         //     method:'POST',
@@ -62,7 +78,7 @@ const Rlayout = () => {
                         </div>
                     </div>
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form onSubmit={handleRegister} className="card-body">
+                        <form ref={formRef} onSubmit={handleRegister} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>
@@ -87,11 +103,14 @@ const Rlayout = () => {
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Register</button>
                             </div>
-                            <h1 className='text-center'>or</h1>
+                            <h1 className='text-center text-green-800'>or already have an account</h1>
+                            <div className='flex justify-center items-center'>
                             <div className="form-control ">
-                                <button className="btn btn-primary">Log in with google</button>
+                                <Link to='/login'><button className="btn btn-primary w-80">Login</button></Link>
+                            </div>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>

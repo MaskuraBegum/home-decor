@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
+import { AuthContext } from './provider/Auth_provider';
 
 const Root = () => {
+    const {logout,user} = useContext(AuthContext);
+
+    const logOut = ()=>{
+        console.log("logout is clicked")
+        logout()
+        .then(()=>{
+            console.log('done')
+            alert('sined out sussecfully')
+        })
+        .catch((error)=>{
+            alert(error.message)
+        })
+    }
     const link = <>
         <li><NavLink to="/" className={location.pathname === '/home' ? 'active' : ''}><a>Home</a></NavLink></li>
         <li><NavLink to="/cart" className={location.pathname === '/cart' ? 'active' : ''}><a>Your Cart</a></NavLink></li>
@@ -29,9 +43,13 @@ const Root = () => {
                         {link}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                {user?<div className="navbar-end">
+                    <div className='p-2'><div className='text-sm p-2 border-2 rounded-2xl'>{user.email}</div></div>
+                    <button onClick={logOut} className="btn">Logout</button>
+                </div>:<div className="navbar-end">
                     <Link to='/login' className="btn">Login</Link>
-                </div>
+                </div>}
+                
             </div>
             <Outlet></Outlet>
         </div>

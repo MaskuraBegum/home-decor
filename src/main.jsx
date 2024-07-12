@@ -14,6 +14,8 @@ import Product from './Product/Product.jsx';
 import Hdetails from './Home/Hdetails.jsx';
 import Rlayout from './Register/Rlayout.jsx';
 import Llayout from './Login.jsx/Llayout.jsx';
+import Auth_provider from './provider/Auth_provider.jsx';
+import PrivateRout from './PrivateRaout/PrivateRout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +33,9 @@ const router = createBrowserRouter([
       },
       {
         path:"/home/:id",
-        element:<Hdetails></Hdetails>,
+        element:<PrivateRout>
+          <Hdetails></Hdetails>,
+        </PrivateRout>,
         loader:()=> fetch('alldata.json')
       },
       {
@@ -50,6 +54,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    
+    <Auth_provider>
+      <RouterProvider router={router} />
+    </Auth_provider>
   </React.StrictMode>,
 )

@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Banner = () => {
-
+    //https://i.ibb.co/2hRD0s5/0016-venturafadd1603192499.jpg
     return (
         <div className='my-8 px-12'>
-            <div className="hero max-h-screen rounded-2xl" style={{ backgroundImage: 'url(https://i.ibb.co/2hRD0s5/0016-venturafadd1603192499.jpg)' }}>
+            <div className="hero max-h-screen rounded-2xl" style={{ backgroundImage: 'url(https://i.ibb.co/ZhHxbp5/best-boise-furniture-home-decor-stores.jpg)' }}>
                 <div className="hero-overlay bg-opacity-60 rounded-2xl"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md py-28">
