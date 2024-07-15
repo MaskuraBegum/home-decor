@@ -79,17 +79,19 @@ const Llayout = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
-                            <div className="form-control mt-6">
+                            <div className="form-control mt-2">
                                 <button className="btn btn-primary">login</button>
                             </div>
-                            <h1 className='text-center text-green-800'>If you don't have an account then please</h1>
-                            <div className="form-control mt-2">
-                                <Link to='/register'><button className="btn w-full btn-primary">Register</button></Link>
+                            <div className=' justify-center items-center'>
+                            <h1 className='text-center text-green-800 text-sm'>If you don't have an account, please
+                                <Link to='/register'><a className='text-blue-700 font-bold underline'> Register </a></Link>
+                            </h1>
+                            
                             </div>
                         </form>
-                        <h1 className='text-center -mt-6'>or</h1>
+                        <h1 className='text-center -mt-6 mb-2'>- - - - - - - - - - - - or - - - - - - - - - - - - </h1>
                         <div className='flex justify-center items-center'>
-                        <div className="form-control w-80 ">
+                        <div className="form-control w-80 mb-4">
                                 <button onClick={googleClick} className="btn btn-primary">Log in with google</button>
                         </div>
                         </div>

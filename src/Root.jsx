@@ -45,9 +45,9 @@ const Root = () => {
                 </div>
                 {user?<div className="navbar-end">
                     <div className='p-2'><div className='text-sm p-2 border-2 rounded-2xl'>{user.email}</div></div>
-                    <button onClick={logOut} className="btn">Logout</button>
+                    <button onClick={logOut} className="btn bg-orange-100 px-8">LogOut</button>
                 </div>:<div className="navbar-end">
-                    <Link to='/login' className="btn">Login</Link>
+                    <Link to='/login' className="btn btn-primary px-8 text-md font-extrabold">LogIn</Link>
                 </div>}
                 
             </div>
